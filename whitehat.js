@@ -22,7 +22,11 @@ document.getElementsByClassName('form-control')[8].value = 'oroor';
 document.getElementsByClassName('button')[0].click();
 
 waitForStep2(function() {
-    document.getElementsByClassName('btn btn-block btn-success website')[2]
-    document.getElementsByClassName('btn btn-block btn-success website')[2]
     document.getElementsByClassName('btn btn-block btn-success website')[2].click();
+})
+
+checkVoteValidity(function() {
+    setTimeout(function(){
+        document.getElementById('voteBtn').click();
+    }, 400);
 })
